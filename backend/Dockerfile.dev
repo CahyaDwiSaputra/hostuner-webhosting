@@ -1,0 +1,21 @@
+# ==============================================================================
+# Development Backend Dockerfile
+# Supports live-reloading via volume mount and tsx/nodemon
+# ==============================================================================
+
+FROM node:22-alpine
+WORKDIR /app
+
+RUN apk add --no-cache libc6-compat wget
+
+COPY package.json package-lock.json* ./
+RUN npm install
+
+COPY . .
+
+ENV NODE_ENV=development
+ENV PORT=5000
+
+EXPOSE 5000
+
+CMD ["npx", "tsx", "watch", "src/server.ts"]
