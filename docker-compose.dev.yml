@@ -70,6 +70,7 @@ services:
       REDIS_PASSWORD: "${REDIS_PASSWORD:-buana_redis_dev_secret!}"
       JWT_SECRET: "${JWT_SECRET:-super_secret_jwt_buana_logika_utama_dev_key_2026_at_least_64_characters}"
       UPLOAD_DIR: "/app/uploads"
+      GEMINI_API_KEY: "${GEMINI_API_KEY:-}"
     volumes:
       - ./backend:/app
       - /app/node_modules

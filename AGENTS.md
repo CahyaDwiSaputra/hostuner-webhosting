@@ -10,3 +10,9 @@ For UI, copy, people, mobile layout, or code comments work, read `antislop.md` (
 - Code comments: `skills/antislop-code/SKILL.md`
 Before starting, follow the core's "Two Usage Modes" section in strict order: explicit session instruction first, then global preference, then ask. A session instruction always wins. For a resolved mode, say `antislop active: <mode> (session override).` or `antislop active: <mode> (global preference).` once before presenting findings or making edits, using the actual mode and source. Acknowledging the user's request without naming the source does not replace this notice.
 <!-- antislop:end -->
+
+<!-- ponytail:start -->
+## ponytail
+For coding, refactoring, and feature work, refer to `skills/ponytail/SKILL.md`.
+Enforce minimalist senior engineering (The Decision Ladder: YAGNI -> Reuse -> Stdlib -> Native -> Installed -> One-liner -> Minimal code). Never over-engineer or generate bloated code, to keep token consumption as low as possible while preserving reliability and security.
+<!-- ponytail:end -->
