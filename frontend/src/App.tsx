@@ -7,6 +7,7 @@ import { OrderConfigPage } from './pages/OrderConfigPage';
 import { ClientDashboardPage } from './pages/ClientDashboardPage';
 import { AdminDashboardPage } from './pages/AdminDashboardPage';
 import { AuthModal } from './components/AuthModal';
+import { ChatbotWidget } from './components/ChatbotWidget';
 
 const AppContent: React.FC = () => {
   const { currentView, setCurrentView, currentUser, login } = useApp();
@@ -29,6 +30,9 @@ const AppContent: React.FC = () => {
 
       <Footer />
       <AuthModal />
+
+      {/* Floating AI Chatbot — visible on all pages */}
+      <ChatbotWidget />
     </div>
   );
 };
